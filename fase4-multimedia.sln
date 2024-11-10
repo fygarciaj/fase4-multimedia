@@ -3,7 +3,7 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.11.35312.102
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{F184B08F-C81C-45F6-A57F-5ABD9991F28F}") = "semilleros", "semilleros\semilleros.vbproj", "{944DD905-DB8D-4C41-B52C-0268C542696A}"
+Project("{F184B08F-C81C-45F6-A57F-5ABD9991F28F}") = "fase-4", "semilleros\fase-4.vbproj", "{944DD905-DB8D-4C41-B52C-0268C542696A}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
