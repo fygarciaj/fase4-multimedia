@@ -1,5 +1,4 @@
 ﻿<%@ Page Title="" Language="vb" AutoEventWireup="false" MasterPageFile="~/home.Master" CodeBehind="presentacion.aspx.vb" Inherits="semilleros.Formulario_web11" %>
-
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
     <title>SPAEU Inicio</title>
 </asp:Content>
@@ -47,10 +46,6 @@
                             <p class="text-muted">
                                 Para conocer los procesos académicos usted debe estar registrado en nuestra plataforma, si no está registrado puede hacer click en el botón registrarse y proporcionar los datos requeridos, si ya está registrado, puede dar click en el botón de iniciar sesión.
                             </p>
-                            <div class="d-flex justify-content-end gap-2">
-                                <asp:Button CssClass="btn btn-outline-primary" ID="Button1" runat="server" Text="Registrarse" />
-                                <asp:Button ID="Button2" runat="server" Text="Iniciar Sesión" CssClass="btn btn-primary" />
-                            </div>
                         </div>
                     </div>
                 </div>

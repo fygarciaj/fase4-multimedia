@@ -1,5 +1,4 @@
 ﻿<%@ Page Title="" Language="vb" AutoEventWireup="false" MasterPageFile="~/home.Master" CodeBehind="semilleros.aspx.vb" Inherits="semilleros.Formulario_web1" %>
-
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
     <title>Semilleros de investigación</title>
 </asp:Content>
@@ -13,7 +12,6 @@
             Los semilleros de investigación son conformados mayoritariamente por estudiantes de los diferentes programas académicos de la UNAD (se fortalece el aspecto multidisciplinar) que son guiados por docentes de grado y postgrado, quienes deben incentivar la curiosidad científica y la búsqueda incansable de soluciones a los problemas cotidianos.
             fuente
         </p>
-
         <!-- Contenido principal con PDF y reproductor -->
         <div class="row">
             <div class="col-md-8">
@@ -24,7 +22,6 @@
                     <button class="nav-link" id="nav-normatividad-tab" data-bs-toggle="tab" data-bs-target="#nav-normatividad" type="button" role="tab" aria-controls="nav-normatividad" aria-selected="false">Normatividad</button>
                     <button class="nav-link" id="nav-evaluacion-tab" data-bs-toggle="tab" data-bs-target="#nav-evaluacion" type="button" role="tab" aria-controls="nav-evaluacion" aria-selected="false">Evaluación</button>
                 </div>
-
                 <!-- Contenido de cada tab -->
                 <div class="tab-content" id="nav-tabContent">
                     <div class="tab-pane fade show active" id="nav-requisitos" role="tabpanel" aria-labelledby="nav-requisitos-tab">
@@ -201,7 +198,6 @@
                     </div>
                 </div>
             </div>
-
             <div class="col-md-4">
                 <!-- video -->
                 <div class="card mt-5">
