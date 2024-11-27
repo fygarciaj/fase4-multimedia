@@ -249,7 +249,7 @@
     </script>
     <script>
         const videoIframe = document.getElementById('video-frame');
-        const fallbackVideoSrc = 'video/semilleros.mp4';
+        const fallbackVideoSrc = 'videos/semilleros.mp4';
 
         videoIframe.addEventListener("load", function () {
             try {

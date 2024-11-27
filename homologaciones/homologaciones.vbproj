@@ -9,16 +9,16 @@
     </ProductVersion>
     <SchemaVersion>
     </SchemaVersion>
-    <ProjectGuid>{944DD905-DB8D-4C41-B52C-0268C542696A}</ProjectGuid>
+    <ProjectGuid>{2C88FB23-44D3-4E32-A191-B985570EC7A9}</ProjectGuid>
     <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{F184B08F-C81C-45F6-A57F-5ABD9991F28F}</ProjectTypeGuids>
     <OutputType>Library</OutputType>
-    <RootNamespace>semilleros</RootNamespace>
-    <AssemblyName>semilleros</AssemblyName>
+    <RootNamespace>homologaciones</RootNamespace>
+    <AssemblyName>homologaciones</AssemblyName>
     <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
     <MyType>Custom</MyType>
     <UseIISExpress>true</UseIISExpress>
     <Use64BitIISExpress />
-    <IISExpressSSLPort />
+    <IISExpressSSLPort>44339</IISExpressSSLPort>
     <IISExpressAnonymousAuthentication />
     <IISExpressWindowsAuthentication />
     <IISExpressUseClassicPipelineMode />
@@ -32,7 +32,7 @@
     <DefineDebug>true</DefineDebug>
     <DefineTrace>true</DefineTrace>
     <OutputPath>bin\</OutputPath>
-    <DocumentationFile>semilleros.xml</DocumentationFile>
+    <DocumentationFile>homologaciones.xml</DocumentationFile>
     <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
@@ -42,7 +42,7 @@
     <DefineTrace>true</DefineTrace>
     <Optimize>true</Optimize>
     <OutputPath>bin\</OutputPath>
-    <DocumentationFile>semilleros.xml</DocumentationFile>
+    <DocumentationFile>homologaciones.xml</DocumentationFile>
     <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
   </PropertyGroup>
   <ItemGroup>
@@ -92,77 +92,20 @@
     <Import Include="System.Web.UI.HtmlControls" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="audios\Credito_posgrado.mp3" />
-    <Content Include="audios\investigacion.mp3" />
-    <Content Include="audios\monografia.mp3" />
-    <Content Include="audios\pasantia.mp3" />
-    <Content Include="css\normalize.css" />
-    <Content Include="escenarios.aspx" />
-    <Content Include="images\info_opc_grado.png" />
-    <Content Include="images\unadlogo.png" />
-    <Content Include="images\validacion.jpg" />
-    <Content Include="metas.aspx" />
-    <Content Include="opcionesgrado.aspx" />
+    <Content Include="Audiohomologaciones.m4a" />
+    <Content Include="Audiohomologaciones.mp3" />
     <Content Include="homologaciones.aspx" />
-    <Content Include="presentacion.aspx" />
-    <Content Include="semilleros.aspx" />
-    <Content Include="Global.asax" />
-    <Content Include="images\header.png" />
-    <Content Include="sonido\Audiohomologaciones.m4a" />
-    <Content Include="sonido\Audiohomologaciones.mp3" />
-    <Content Include="sonido\christmas-spirit-265741.mp3" />
-    <Content Include="videos\CreditoPosgrado.mp4" />
-    <Content Include="videos\investigacion.mp4" />
-    <Content Include="videos\monografia.mp4" />
-    <Content Include="videos\Pasantia.mp4" />
-    <Content Include="videos\semilleros.mp4" />
+    <Content Include="unadlogo.png" />
+    <Content Include="validacion.jpg" />
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="escenarios.aspx.designer.vb">
-      <DependentUpon>escenarios.aspx</DependentUpon>
-    </Compile>
-    <Compile Include="escenarios.aspx.vb">
-      <DependentUpon>escenarios.aspx</DependentUpon>
-      <SubType>ASPXCodebehind</SubType>
-    </Compile>
-    <Compile Include="metas.aspx.designer.vb">
-      <DependentUpon>metas.aspx</DependentUpon>
-    </Compile>
-    <Compile Include="metas.aspx.vb">
-      <DependentUpon>metas.aspx</DependentUpon>
-      <SubType>ASPXCodebehind</SubType>
-    </Compile>
-    <Compile Include="opcionesgrado.aspx.designer.vb">
-      <DependentUpon>opcionesgrado.aspx</DependentUpon>
-    </Compile>
-    <Compile Include="opcionesgrado.aspx.vb">
-      <DependentUpon>opcionesgrado.aspx</DependentUpon>
-      <SubType>ASPXCodebehind</SubType>
-    </Compile>
     <Compile Include="homologaciones.aspx.designer.vb">
       <DependentUpon>homologaciones.aspx</DependentUpon>
     </Compile>
     <Compile Include="homologaciones.aspx.vb">
       <DependentUpon>homologaciones.aspx</DependentUpon>
       <SubType>ASPXCodebehind</SubType>
-    </Compile>
-    <Compile Include="presentacion.aspx.designer.vb">
-      <DependentUpon>presentacion.aspx</DependentUpon>
-    </Compile>
-    <Compile Include="presentacion.aspx.vb">
-      <DependentUpon>presentacion.aspx</DependentUpon>
-      <SubType>ASPXCodebehind</SubType>
-    </Compile>
-    <Compile Include="semilleros.aspx.designer.vb">
-      <DependentUpon>semilleros.aspx</DependentUpon>
-    </Compile>
-    <Compile Include="semilleros.aspx.vb">
-      <DependentUpon>semilleros.aspx</DependentUpon>
-      <SubType>ASPXCodebehind</SubType>
-    </Compile>
-    <Compile Include="Global.asax.vb">
-      <DependentUpon>Global.asax</DependentUpon>
     </Compile>
     <Compile Include="My Project\AssemblyInfo.vb" />
     <Compile Include="My Project\Application.Designer.vb">
@@ -183,13 +126,6 @@
       <DependentUpon>Settings.settings</DependentUpon>
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
     </Compile>
-    <Compile Include="home.Master.designer.vb">
-      <DependentUpon>home.Master</DependentUpon>
-    </Compile>
-    <Compile Include="home.Master.vb">
-      <DependentUpon>home.Master</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
   </ItemGroup>
   <ItemGroup>
     <EmbeddedResource Include="My Project\Resources.resx">
@@ -200,8 +136,7 @@
     </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>
-    <Content Include="docs\manual_semilleros_de_Investigación.pdf" />
-    <Content Include="docs\homologacion.pdf" />
+    <Content Include="homologacion.pdf" />
     <None Include="My Project\Application.myapp">
       <Generator>MyApplicationCodeGenerator</Generator>
       <LastGenOutput>Application.Designer.vb</LastGenOutput>
@@ -212,24 +147,12 @@
       <LastGenOutput>Settings.Designer.vb</LastGenOutput>
     </None>
     <None Include="packages.config" />
-    <Content Include="home.Master" />
-    <Content Include="pdfs\guia_credito_posgrado.pdf" />
-    <Content Include="pdfs\guia_investigacion.pdf" />
-    <Content Include="pdfs\guia_monografia.pdf" />
-    <Content Include="pdfs\guia_pasantia.pdf" />
-    <Content Include="pdfs\P-7-9.pdf" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
     <None Include="Web.Release.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
-  </ItemGroup>
-  <ItemGroup>
-    <Folder Include="App_Data\" />
-    <Folder Include="App_LocalResources\" />
-    <Folder Include="Models\" />
-    <Folder Include="video\" />
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
@@ -256,9 +179,9 @@
         <WebProjectProperties>
           <UseIIS>True</UseIIS>
           <AutoAssignPort>True</AutoAssignPort>
-          <DevelopmentServerPort>51154</DevelopmentServerPort>
+          <DevelopmentServerPort>54940</DevelopmentServerPort>
           <DevelopmentServerVPath>/</DevelopmentServerVPath>
-          <IISUrl>http://localhost:51154/</IISUrl>
+          <IISUrl>https://localhost:44339/</IISUrl>
           <NTLMAuthentication>False</NTLMAuthentication>
           <UseCustomServer>False</UseCustomServer>
           <CustomServerUrl>
