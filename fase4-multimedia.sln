@@ -5,6 +5,8 @@ VisualStudioVersion = 17.11.35312.102
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{F184B08F-C81C-45F6-A57F-5ABD9991F28F}") = "fase-4", "semilleros\fase-4.vbproj", "{944DD905-DB8D-4C41-B52C-0268C542696A}"
 EndProject
+Project("{F184B08F-C81C-45F6-A57F-5ABD9991F28F}") = "Ejercicio_3_SQlite", "..\Ejercicio_3_SQlite\Ejercicio_3_SQlite.vbproj", "{C33EAB08-9B1C-46F2-9C37-D41DA61CDB27}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,6 +17,10 @@ Global
 		{944DD905-DB8D-4C41-B52C-0268C542696A}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{944DD905-DB8D-4C41-B52C-0268C542696A}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{944DD905-DB8D-4C41-B52C-0268C542696A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C33EAB08-9B1C-46F2-9C37-D41DA61CDB27}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C33EAB08-9B1C-46F2-9C37-D41DA61CDB27}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C33EAB08-9B1C-46F2-9C37-D41DA61CDB27}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C33EAB08-9B1C-46F2-9C37-D41DA61CDB27}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
