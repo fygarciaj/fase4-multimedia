@@ -49,6 +49,9 @@
 
                             <a class="nav-link <%= IsActivePage("semilleros.aspx") %>"
                                 href="semilleros.aspx">5. Semilleros de investigación</a>
+                            <% If Not Session("UsuarioLogueado") Is Nothing AndAlso CBool(Session("UsuarioLogueado")) Then %>
+                            <a class="nav-link" href="logout.aspx">Cerrar Sesión</a>
+                            <% End If %>
                         </div>
                     </div>
                 </div>

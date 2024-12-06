@@ -17,6 +17,9 @@ Public Class Site
         If Not IsPostBack Then
             InitializeDatabase()
         End If
+        If Session("UsuarioLogueado") Is Nothing Then
+            Response.Redirect("login.aspx")
+        End If
     End Sub
 
 
@@ -42,7 +45,7 @@ Public Class Site
                 Directory.CreateDirectory(appDataPath)
             End If
 
-            Dim dbPath As String = Path.Combine(appDataPath, "Usuarios.sqlite")
+            Dim dbPath As String = Path.Combine(appDataPath, "db.sqlite")
             Dim connectionString As String = $"Data Source={dbPath};Version=3;"
 
             Using connection As New SQLiteConnection(connectionString)

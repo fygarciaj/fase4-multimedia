@@ -135,6 +135,7 @@
     <Content Include="images\unadlogo.png" />
     <Content Include="images\validacion.jpg" />
     <Content Include="login.aspx" />
+    <Content Include="logout.aspx" />
     <Content Include="metas.aspx" />
     <Content Include="opcionesgrado.aspx" />
     <Content Include="homologaciones.aspx" />
@@ -153,6 +154,7 @@
     <Content Include="videos\Pasantia.mp4" />
     <Content Include="videos\semilleros.mp4" />
     <Content Include="Web.config" />
+    <Content Include="WebForm1.aspx" />
   </ItemGroup>
   <ItemGroup>
     <Compile Include="escenarios.aspx.designer.vb">
@@ -167,6 +169,13 @@
     </Compile>
     <Compile Include="login.aspx.vb">
       <DependentUpon>login.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="logout.aspx.designer.vb">
+      <DependentUpon>logout.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="logout.aspx.vb">
+      <DependentUpon>logout.aspx</DependentUpon>
       <SubType>ASPXCodebehind</SubType>
     </Compile>
     <Compile Include="metas.aspx.designer.vb">
@@ -247,6 +256,13 @@
       <DependentUpon>home.Master</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
+    <Compile Include="WebForm1.aspx.designer.vb">
+      <DependentUpon>WebForm1.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="WebForm1.aspx.vb">
+      <DependentUpon>WebForm1.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
   </ItemGroup>
   <ItemGroup>
     <EmbeddedResource Include="My Project\Resources.resx">
@@ -259,6 +275,7 @@
   <ItemGroup>
     <Content Include="docs\manual_semilleros_de_Investigación.pdf" />
     <Content Include="docs\homologacion.pdf" />
+    <Content Include="App_Data\db.sqlite" />
     <None Include="My Project\Application.myapp">
       <Generator>MyApplicationCodeGenerator</Generator>
       <LastGenOutput>Application.Designer.vb</LastGenOutput>
@@ -283,7 +300,6 @@
     </None>
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="App_Data\" />
     <Folder Include="App_LocalResources\" />
     <Folder Include="data\" />
     <Folder Include="Models\" />

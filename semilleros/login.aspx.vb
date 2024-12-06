@@ -5,4 +5,8 @@
 
     End Sub
 
+    Protected Sub btnlogin_Click(sender As Object, e As EventArgs) Handles btnlogin.Click
+        Session("UsuarioLogueado") = True
+        Response.Redirect("presentacion.aspx")
+    End Sub
 End Class
