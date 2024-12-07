@@ -53,18 +53,19 @@ Public Class Site
 
                 If Not TableExists(connection, "Usuarios") Then
                     Dim tableCommand As String = "
-                CREATE TABLE Usuarios (
-                    ID INTEGER PRIMARY KEY AUTOINCREMENT,
-                    Nombres TEXT NOT NULL,
-                    Nacionalidad TEXT NOT NULL,
-                    EstadoCivil TEXT NOT NULL,
-                    Correo TEXT NOT NULL,
-                    Edad INTEGER NOT NULL,
-                    Programa TEXT NOT NULL,
-                    Semestre INTEGER NOT NULL,
-                    Centro TEXT NOT NULL
-                );"
-
+                        CREATE TABLE Usuarios (
+                            Id INTEGER PRIMARY KEY AUTOINCREMENT,
+                            Usuario TEXT NOT NULL,
+                            Nombres TEXT NOT NULL,
+                            Nacionalidad TEXT NOT NULL,
+                            EstadoCivil TEXT NOT NULL,
+                            Correo TEXT NOT NULL,
+                            Edad INTEGER NOT NULL,
+                            Programa TEXT NOT NULL,
+                            Semestre INTEGER NOT NULL,
+                            Centro TEXT NOT NULL,
+                            Password TEXT NOT NULL
+                        );"
                     Using cmd As New SQLiteCommand(tableCommand, connection)
                         cmd.ExecuteNonQuery()
                         Console.WriteLine("Tabla 'Usuarios' creada exitosamente.")

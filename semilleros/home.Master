@@ -34,23 +34,23 @@
                     <div class="col align-items-center">
                         <div class="nav nav-pills nav-fill mt-4">
                             <a class="nav-link <%= IsActivePage("presentacion.aspx") %>"
-                                href="presentacion.aspx">🏠 Inicio</a>
+                                href="presentacion.aspx" accesskey="i">🏠 Inicio</a>
                             <a class="nav-link <%= IsActivePage("homologaciones.aspx") %>"
-                                href="homologaciones.aspx">1. Homologaciones</a>
+                                href="homologaciones.aspx" accesskey="1">1. Homologaciones</a>
 
                             <a class="nav-link <%= IsActivePage("opcionesgrado.aspx") %>"
-                                href="opcionesgrado.aspx">2. Opciones de grado</a>
+                                href="opcionesgrado.aspx" accesskey="2">2. Opciones de grado</a>
 
                             <a class="nav-link <%= IsActivePage("escenarios.aspx") %>"
-                                href="escenarios.aspx">3. Escenarios de componentes prácticos</a>
+                                href="escenarios.aspx" accesskey="3">3. Escenarios de componentes prácticos</a>
 
                             <a class="nav-link <%= IsActivePage("metas.aspx") %>"
-                                href="metas.aspx">4. Metas e indicadores del SIGI</a>
+                                href="metas.aspx" accesskey="4">4. Metas e indicadores del SIGI</a>
 
                             <a class="nav-link <%= IsActivePage("semilleros.aspx") %>"
-                                href="semilleros.aspx">5. Semilleros de investigación</a>
+                                href="semilleros.aspx" accesskey="5">5. Semilleros de investigación</a>
                             <% If Not Session("UsuarioLogueado") Is Nothing AndAlso CBool(Session("UsuarioLogueado")) Then %>
-                            <a class="nav-link" href="logout.aspx">Cerrar Sesión</a>
+                            <a class="nav-link" href="logout.aspx">🔚 Cerrar Sesion</a>
                             <% End If %>
                         </div>
                     </div>

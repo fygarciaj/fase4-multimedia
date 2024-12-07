@@ -49,8 +49,9 @@
                             </p>
                         </div>
                         <div class="d-flex justify-content-end gap-2">
-                            <asp:Button CssClass="btn btn-outline-primary" ID="Button1" runat="server" Text="Registrarse" PostBackUrl="~/register.aspx" />
-                            <asp:Button ID="Button2" runat="server" Text="Iniciar Sesión" CssClass="btn btn-primary" PostBackUrl="~/login.aspx" />
+                            <% If Not Session("UsuarioLogueado") Is Nothing AndAlso CBool(Session("UsuarioLogueado")) Then %>
+                            <asp:Button ID="Button3" runat="server" Text="Cerrar Sesión" CssClass="btn btn-primary" PostBackUrl="~/logout.aspx" />
+                            <% End If %>
                         </div>
                     </div>
                 </div>

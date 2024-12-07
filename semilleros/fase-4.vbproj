@@ -130,10 +130,12 @@
     <Content Include="audios\monografia.mp3" />
     <Content Include="audios\pasantia.mp3" />
     <Content Include="css\normalize.css" />
+    <Content Include="css\style_semilleros.css" />
     <Content Include="escenarios.aspx" />
     <Content Include="images\info_opc_grado.png" />
     <Content Include="images\unadlogo.png" />
     <Content Include="images\validacion.jpg" />
+    <Content Include="js\semilleros.js" />
     <Content Include="login.aspx" />
     <Content Include="logout.aspx" />
     <Content Include="metas.aspx" />
@@ -154,7 +156,6 @@
     <Content Include="videos\Pasantia.mp4" />
     <Content Include="videos\semilleros.mp4" />
     <Content Include="Web.config" />
-    <Content Include="WebForm1.aspx" />
   </ItemGroup>
   <ItemGroup>
     <Compile Include="escenarios.aspx.designer.vb">
@@ -169,7 +170,7 @@
     </Compile>
     <Compile Include="login.aspx.vb">
       <DependentUpon>login.aspx</DependentUpon>
-      <SubType>ASPXCodebehind</SubType>
+      <SubType>ASPXCodeBehind</SubType>
     </Compile>
     <Compile Include="logout.aspx.designer.vb">
       <DependentUpon>logout.aspx</DependentUpon>
@@ -211,7 +212,6 @@
     </Compile>
     <Compile Include="register.aspx.vb">
       <DependentUpon>register.aspx</DependentUpon>
-      <SubType>ASPXCodebehind</SubType>
     </Compile>
     <Compile Include="registro.aspx.designer.vb">
       <DependentUpon>registro.aspx</DependentUpon>
@@ -256,13 +256,6 @@
       <DependentUpon>home.Master</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="WebForm1.aspx.designer.vb">
-      <DependentUpon>WebForm1.aspx</DependentUpon>
-    </Compile>
-    <Compile Include="WebForm1.aspx.vb">
-      <DependentUpon>WebForm1.aspx</DependentUpon>
-      <SubType>ASPXCodebehind</SubType>
-    </Compile>
   </ItemGroup>
   <ItemGroup>
     <EmbeddedResource Include="My Project\Resources.resx">
@@ -303,7 +296,6 @@
     <Folder Include="App_LocalResources\" />
     <Folder Include="data\" />
     <Folder Include="Models\" />
-    <Folder Include="video\" />
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>

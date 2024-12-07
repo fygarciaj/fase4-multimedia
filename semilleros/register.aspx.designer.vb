@@ -23,6 +23,69 @@ Partial Public Class register
     Protected WithEvents form1 As Global.System.Web.UI.HtmlControls.HtmlForm
 
     '''<summary>
+    '''Control txtUsuario.
+    '''</summary>
+    '''<remarks>
+    '''Campo generado automáticamente.
+    '''Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+    '''</remarks>
+    Protected WithEvents txtUsuario As Global.System.Web.UI.WebControls.TextBox
+
+    '''<summary>
+    '''Control rfvUsuario.
+    '''</summary>
+    '''<remarks>
+    '''Campo generado automáticamente.
+    '''Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+    '''</remarks>
+    Protected WithEvents rfvUsuario As Global.System.Web.UI.WebControls.RequiredFieldValidator
+
+    '''<summary>
+    '''Control txtPassword.
+    '''</summary>
+    '''<remarks>
+    '''Campo generado automáticamente.
+    '''Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+    '''</remarks>
+    Protected WithEvents txtPassword As Global.System.Web.UI.WebControls.TextBox
+
+    '''<summary>
+    '''Control rfvPassword.
+    '''</summary>
+    '''<remarks>
+    '''Campo generado automáticamente.
+    '''Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+    '''</remarks>
+    Protected WithEvents rfvPassword As Global.System.Web.UI.WebControls.RequiredFieldValidator
+
+    '''<summary>
+    '''Control txtConfirmPassword.
+    '''</summary>
+    '''<remarks>
+    '''Campo generado automáticamente.
+    '''Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+    '''</remarks>
+    Protected WithEvents txtConfirmPassword As Global.System.Web.UI.WebControls.TextBox
+
+    '''<summary>
+    '''Control rfvConfirmPassword.
+    '''</summary>
+    '''<remarks>
+    '''Campo generado automáticamente.
+    '''Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+    '''</remarks>
+    Protected WithEvents rfvConfirmPassword As Global.System.Web.UI.WebControls.RequiredFieldValidator
+
+    '''<summary>
+    '''Control cvPasswordMatch.
+    '''</summary>
+    '''<remarks>
+    '''Campo generado automáticamente.
+    '''Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+    '''</remarks>
+    Protected WithEvents cvPasswordMatch As Global.System.Web.UI.WebControls.CompareValidator
+
+    '''<summary>
     '''Control txtNombres.
     '''</summary>
     '''<remarks>
@@ -32,13 +95,13 @@ Partial Public Class register
     Protected WithEvents txtNombres As Global.System.Web.UI.WebControls.TextBox
 
     '''<summary>
-    '''Control cvNombres.
+    '''Control rfvNombres.
     '''</summary>
     '''<remarks>
     '''Campo generado automáticamente.
     '''Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
     '''</remarks>
-    Protected WithEvents cvNombres As Global.System.Web.UI.WebControls.CustomValidator
+    Protected WithEvents rfvNombres As Global.System.Web.UI.WebControls.RequiredFieldValidator
 
     '''<summary>
     '''Control txtNacionalidad.
@@ -68,13 +131,22 @@ Partial Public Class register
     Protected WithEvents txtCorreo As Global.System.Web.UI.WebControls.TextBox
 
     '''<summary>
-    '''Control cvCorreo.
+    '''Control rfvCorreo.
     '''</summary>
     '''<remarks>
     '''Campo generado automáticamente.
     '''Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
     '''</remarks>
-    Protected WithEvents cvCorreo As Global.System.Web.UI.WebControls.CustomValidator
+    Protected WithEvents rfvCorreo As Global.System.Web.UI.WebControls.RequiredFieldValidator
+
+    '''<summary>
+    '''Control revCorreo.
+    '''</summary>
+    '''<remarks>
+    '''Campo generado automáticamente.
+    '''Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+    '''</remarks>
+    Protected WithEvents revCorreo As Global.System.Web.UI.WebControls.RegularExpressionValidator
 
     '''<summary>
     '''Control txtEdad.
@@ -86,6 +158,15 @@ Partial Public Class register
     Protected WithEvents txtEdad As Global.System.Web.UI.WebControls.TextBox
 
     '''<summary>
+    '''Control rvEdad.
+    '''</summary>
+    '''<remarks>
+    '''Campo generado automáticamente.
+    '''Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+    '''</remarks>
+    Protected WithEvents rvEdad As Global.System.Web.UI.WebControls.RangeValidator
+
+    '''<summary>
     '''Control txtPrograma.
     '''</summary>
     '''<remarks>
@@ -95,13 +176,13 @@ Partial Public Class register
     Protected WithEvents txtPrograma As Global.System.Web.UI.WebControls.TextBox
 
     '''<summary>
-    '''Control cvPrograma.
+    '''Control rfvPrograma.
     '''</summary>
     '''<remarks>
     '''Campo generado automáticamente.
     '''Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
     '''</remarks>
-    Protected WithEvents cvPrograma As Global.System.Web.UI.WebControls.CustomValidator
+    Protected WithEvents rfvPrograma As Global.System.Web.UI.WebControls.RequiredFieldValidator
 
     '''<summary>
     '''Control txtSemestre.
@@ -113,13 +194,13 @@ Partial Public Class register
     Protected WithEvents txtSemestre As Global.System.Web.UI.WebControls.TextBox
 
     '''<summary>
-    '''Control cvSemestre.
+    '''Control rfvSemestre.
     '''</summary>
     '''<remarks>
     '''Campo generado automáticamente.
     '''Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
     '''</remarks>
-    Protected WithEvents cvSemestre As Global.System.Web.UI.WebControls.CustomValidator
+    Protected WithEvents rfvSemestre As Global.System.Web.UI.WebControls.RequiredFieldValidator
 
     '''<summary>
     '''Control txtCentro.
@@ -131,13 +212,13 @@ Partial Public Class register
     Protected WithEvents txtCentro As Global.System.Web.UI.WebControls.TextBox
 
     '''<summary>
-    '''Control cvCentro.
+    '''Control rfvCentro.
     '''</summary>
     '''<remarks>
     '''Campo generado automáticamente.
     '''Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
     '''</remarks>
-    Protected WithEvents cvCentro As Global.System.Web.UI.WebControls.CustomValidator
+    Protected WithEvents rfvCentro As Global.System.Web.UI.WebControls.RequiredFieldValidator
 
     '''<summary>
     '''Control btnRegistrar.
@@ -147,4 +228,13 @@ Partial Public Class register
     '''Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
     '''</remarks>
     Protected WithEvents btnRegistrar As Global.System.Web.UI.WebControls.Button
+
+    '''<summary>
+    '''Control lblError.
+    '''</summary>
+    '''<remarks>
+    '''Campo generado automáticamente.
+    '''Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+    '''</remarks>
+    Protected WithEvents lblError As Global.System.Web.UI.WebControls.Label
 End Class

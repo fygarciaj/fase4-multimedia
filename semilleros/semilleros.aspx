@@ -1,6 +1,8 @@
 ﻿<%@ Page Title="" Language="vb" AutoEventWireup="false" MasterPageFile="~/home.Master" CodeBehind="semilleros.aspx.vb" Inherits="semilleros.Formulario_web1" %>
+
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
     <title>Semilleros de investigación</title>
+    <link rel="stylesheet" href="~/css/style_semilleros.css" />
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
     <div class="container my-4">
@@ -194,7 +196,88 @@
                         </div>
                     </div>
                     <div class="tab-pane fade" id="nav-evaluacion" role="tabpanel" aria-labelledby="nav-evaluacion-tab">
-                        <p>Contenido de Evaluación...</p>
+                        <asp:MultiView ID="MultiViewEvaluacion" runat="server" ActiveViewIndex="0">
+                            <!-- Pregunta 1 -->
+                            <asp:View ID="ViewPregunta1" runat="server">
+                                <div class="question-container">
+                                    <h3>1. ¿Qué son los semilleros de investigación?</h3>
+                                    <asp:RadioButtonList ID="rbPregunta1" runat="server" CssClass="radio-btn-list">
+                                        <asp:ListItem Value="1">Grupos de estudiantes para realizar prácticas profesionales</asp:ListItem>
+                                        <asp:ListItem Value="2">Programas académicos que otorgan créditos para el grado</asp:ListItem>
+                                        <asp:ListItem Value="3">Espacios para fomentar habilidades investigativas</asp:ListItem>
+                                        <asp:ListItem Value="4">Un departamento académico de la universidad</asp:ListItem>
+                                        <asp:ListItem Value="5">Un requisito obligatorio para graduarse</asp:ListItem>
+                                    </asp:RadioButtonList>
+                                    <asp:Button ID="btnNext1" runat="server" Text="Siguiente" CssClass="nav-btn" OnClick="btnNext_Click" />
+                                </div>
+                            </asp:View>
+
+                            <!-- Pregunta 2 -->
+                            <asp:View ID="ViewPregunta2" runat="server">
+                                <div class="question-container">
+                                    <h3>2. ¿Cuál es el objetivo principal de un semillero de investigación?</h3>
+                                    <asp:RadioButtonList ID="rbPregunta2" runat="server" CssClass="radio-btn-list">
+                                        <asp:ListItem Value="1">Realizar prácticas empresariales</asp:ListItem>
+                                        <asp:ListItem Value="2">Obtener experiencia en docencia</asp:ListItem>
+                                        <asp:ListItem Value="3">Presentar proyectos de grado</asp:ListItem>
+                                        <asp:ListItem Value="4">Fomentar la capacidad de investigar</asp:ListItem>
+                                        <asp:ListItem Value="5">Participar en actividades deportivas</asp:ListItem>
+                                    </asp:RadioButtonList>
+                                    <asp:Button ID="btnBack2" runat="server" Text="Atrás" CssClass="nav-btn" OnClick="btnBack_Click" />
+                                    <asp:Button ID="btnNext2" runat="server" Text="Siguiente" CssClass="nav-btn" OnClick="btnNext_Click" />
+                                </div>
+                            </asp:View>
+
+                            <!-- Pregunta 3 -->
+                            <asp:View ID="ViewPregunta3" runat="server">
+                                <div class="question-container">
+                                    <h3>3. ¿Qué beneficio obtienen los estudiantes al participar en un semillero?</h3>
+                                    <asp:RadioButtonList ID="rbPregunta3" runat="server" CssClass="radio-btn-list">
+                                        <asp:ListItem Value="1">Obtienen becas automáticamente</asp:ListItem>
+                                        <asp:ListItem Value="2">Adquieren habilidades investigativas</asp:ListItem>
+                                        <asp:ListItem Value="3">Mejoran sus competencias académicas</asp:ListItem>
+                                        <asp:ListItem Value="4">Consiguen empleos directamente</asp:ListItem>
+                                        <asp:ListItem Value="5">Reciben bonos económicos</asp:ListItem>
+                                    </asp:RadioButtonList>
+                                    <asp:Button ID="btnBack3" runat="server" Text="Atrás" CssClass="nav-btn" OnClick="btnBack_Click" />
+                                    <asp:Button ID="btnNext3" runat="server" Text="Siguiente" CssClass="nav-btn" OnClick="btnNext_Click" />
+                                </div>
+                            </asp:View>
+
+                            <!-- Pregunta 4 -->
+                            <asp:View ID="ViewPregunta4" runat="server">
+                                <div class="question-container">
+                                    <h3>4. ¿Cuál es el rol de los tutores en los semilleros de investigación?</h3>
+                                    <asp:RadioButtonList ID="rbPregunta4" runat="server" CssClass="radio-btn-list">
+                                        <asp:ListItem Value="1">Dirigir a los estudiantes en sus proyectos</asp:ListItem>
+                                        <asp:ListItem Value="2">Administrar recursos financieros</asp:ListItem>
+                                        <asp:ListItem Value="3">Asesorar y guiar el proceso investigativo</asp:ListItem>
+                                        <asp:ListItem Value="4">Organizar eventos deportivos</asp:ListItem>
+                                        <asp:ListItem Value="5">Evaluar únicamente los proyectos</asp:ListItem>
+                                    </asp:RadioButtonList>
+                                    <asp:Button ID="btnBack4" runat="server" Text="Atrás" CssClass="nav-btn" OnClick="btnBack_Click" />
+                                    <asp:Button ID="btnNext4" runat="server" Text="Siguiente" CssClass="nav-btn" OnClick="btnNext_Click" />
+                                </div>
+                            </asp:View>
+
+                            <!-- Pregunta 5 -->
+                            <asp:View ID="ViewPregunta5" runat="server">
+                                <div class="question-container">
+                                    <h3>5. ¿Qué características tienen los proyectos de semilleros de investigación?</h3>
+                                    <asp:RadioButtonList ID="rbPregunta5" runat="server" CssClass="radio-btn-list">
+                                        <asp:ListItem Value="1">Son siempre prácticos</asp:ListItem>
+                                        <asp:ListItem Value="2">No requieren sustentación</asp:ListItem>
+                                        <asp:ListItem Value="3">Deben ser innovadores y metodológicos</asp:ListItem>
+                                        <asp:ListItem Value="4">Solo necesitan cumplir con la normatividad</asp:ListItem>
+                                        <asp:ListItem Value="5">Se enfocan en obtener financiación</asp:ListItem>
+                                    </asp:RadioButtonList>
+                                    <asp:Button ID="btnBack5" runat="server" Text="Atrás" CssClass="nav-btn" OnClick="btnBack_Click" />
+                                    <asp:Button ID="btnSubmit" runat="server" Text="Finalizar" CssClass="nav-btn" OnClick="btnSubmit_Click" />
+                                </div>
+                            </asp:View>
+                        </asp:MultiView>
+                        <asp:Label ID="lblResult" runat="server" Text="" Font-Bold="True" ForeColor="Red" />
+                        <script src="~/js/semilleros.js"></script>
                     </div>
                 </div>
             </div>

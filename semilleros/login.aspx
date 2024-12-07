@@ -63,14 +63,17 @@
         <h3>Bienvenido</h3>
         <form id="formlogin" runat="server">
             <div class="mb-3">
-                <label for="username" class="form-label">Usuario</label>
-                <input type="text" class="form-control" id="username" placeholder="Enter your username" />
+                <label for="txtUsuario" class="form-label">Usuario</label>
+                <asp:TextBox ID="txtUsuario" runat="server" CssClass="form-control"></asp:TextBox>
             </div>
             <div class="mb-3">
-                <label for="password" class="form-label">Contrasena</label>
-                <input type="password" class="form-control" id="password" placeholder="Enter your password" />
+                <label for="txtPassword" class="form-label">Contrasena</label>
+                <asp:TextBox ID="txtPassword" runat="server" CssClass="form-control"></asp:TextBox>
             </div>
             <asp:Button ID="btnlogin" type="submit" class="btn btn-primary w-100" Text="Iniciar Session" runat="server" />
+            <asp:Label ID="lblError" runat="server" Visible="False" CssClass="text-danger text-center d-block my-3" />
+
+            <asp:Button CssClass="btn btn-outline-primary mt-3" ID="ButtonRegister" runat="server" Text="Registrarse" PostBackUrl="~/register.aspx" AccessKey="r" />
         </form>
     </div>
 
